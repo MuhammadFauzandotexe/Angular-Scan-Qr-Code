@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coba-kamera';
+  scanResult:any = '';
+  onCodeResult(result:string){
+    this.scanResult = result;
+    console.log(result);
+  }
 }
